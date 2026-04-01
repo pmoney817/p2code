@@ -1,78 +1,187 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import { Code2, Bot, GraduationCap, Zap, Brain, Users, HeartHandshake, ArrowRight, ChevronRight } from "lucide-react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const services = [
+  {
+    icon: Code2,
+    title: "Website Build",
+    description: "Professional WordPress websites for small businesses — restaurants, contractors, salons. $1,500 flat rate, fully yours to manage.",
+    href: "/services",
+  },
+  {
+    icon: Bot,
+    title: "AI Integration",
+    description: "Chatbots, workflow automation, and AI-powered features that give your business a competitive edge.",
+    href: "/services",
+  },
+  {
+    icon: GraduationCap,
+    title: "AI Learning",
+    description: "Hands-on workshops, structured courses, and team training to future-proof your workforce.",
+    href: "/ai-learning",
+  },
+];
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const features = [
+  {
+    icon: Zap,
+    title: "Modern Tech Stack",
+    description: "Next.js, React, Tailwind CSS, and TypeScript for fast, reliable, and maintainable applications.",
+  },
+  {
+    icon: Brain,
+    title: "AI-First Approach",
+    description: "Built-in AI capabilities from day one so your business stays ahead of the curve.",
+  },
+  {
+    icon: Users,
+    title: "Small Business Focus",
+    description: "Affordable, personalized service tailored to the needs and budgets of growing businesses.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Ongoing Support",
+    description: "We don't disappear after launch. Continuous maintenance, updates, and support when you need it.",
+  },
+];
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
-    >
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the index.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="min-h-screen bg-surface text-text">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden">
+        <div className="grid-bg absolute inset-0" />
+
+        {/* Floating decorative elements */}
+        <div className="absolute top-20 left-[10%] h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
+        <div className="absolute bottom-20 right-[10%] h-72 w-72 rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute top-40 right-[20%] h-px w-32 rotate-45 bg-gradient-to-r from-primary/40 to-transparent" />
+        <div className="absolute bottom-60 left-[15%] h-px w-24 -rotate-12 bg-gradient-to-r from-accent/30 to-transparent" />
+
+        {/* Floating code brackets */}
+        <div className="absolute top-32 right-[25%] font-mono text-5xl font-bold text-primary/10 select-none">
+          {"{ }"}
+        </div>
+        <div className="absolute bottom-40 left-[8%] font-mono text-4xl font-bold text-accent/10 select-none">
+          {"< />"}
+        </div>
+        <div className="absolute top-52 left-[30%] font-mono text-3xl font-bold text-primary/8 select-none">
+          {"=>"}
+        </div>
+
+        <div className="relative mx-auto max-w-6xl px-6 py-32 sm:py-40 lg:py-48">
+          <div className="animate-fade-in-up max-w-3xl">
+            <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
+              We Build{" "}
+              <span className="gradient-text">Digital</span>
+              <br />
+              Experiences
+            </h1>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-text-muted sm:text-xl">
+              Custom websites for small businesses and AI learning solutions
+              that future-proof your team.
+            </p>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-primary to-primary-light px-7 py-3.5 text-base font-semibold text-white transition-all hover:shadow-lg hover:shadow-primary/25 hover:brightness-110"
+              >
+                Start Your Project
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href="/ai-learning"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-surface-lighter px-7 py-3.5 text-base font-semibold text-text transition-all hover:border-accent hover:text-accent"
+              >
+                Explore AI Learning
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="relative mx-auto max-w-6xl px-6 py-24 lg:py-32">
+        <div className="animate-fade-in-up text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            What We Do
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-text-muted">
+            From concept to launch, we deliver end-to-end digital solutions
+            powered by the latest technology.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs/pages/getting-started?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
+            <Link
+              key={service.title}
+              href={service.href}
+              className="group relative rounded-xl border border-surface-lighter bg-surface-light p-8 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+            >
+              <div className="mb-5 inline-flex rounded-lg bg-primary/10 p-3">
+                <service.icon className="h-6 w-6 text-primary-light" />
+              </div>
+              <h3 className="text-xl font-semibold">{service.title}</h3>
+              <p className="mt-3 leading-relaxed text-text-muted">
+                {service.description}
+              </p>
+              <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-primary-light transition-colors group-hover:text-accent">
+                Learn more
+                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </Link>
+          ))}
         </div>
-      </main>
+      </section>
+
+      {/* Why CodePulse */}
+      <section className="border-y border-surface-lighter bg-surface-light/50 py-24 lg:py-32">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="animate-fade-in-up text-center">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Why Businesses Choose <span className="gradient-text">Us</span>
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-text-muted">
+              We combine technical excellence with a genuine commitment to your
+              success.
+            </p>
+          </div>
+          <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            {features.map((feature) => (
+              <div key={feature.title} className="text-center">
+                <div className="mx-auto mb-4 inline-flex rounded-full bg-accent/10 p-4">
+                  <feature.icon className="h-6 w-6 text-accent" />
+                </div>
+                <h3 className="text-lg font-semibold">{feature.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-text-muted">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="relative overflow-hidden py-24 lg:py-32">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-surface to-accent/5" />
+        <div className="absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
+        <div className="relative mx-auto max-w-3xl px-6 text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Ready to Transform Your Business?
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-text-muted">
+            Let&apos;s build something amazing together.
+          </p>
+          <Link
+            href="/contact"
+            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-primary to-primary-light px-8 py-4 text-base font-semibold text-white transition-all hover:shadow-lg hover:shadow-primary/25 hover:brightness-110"
+          >
+            Get a Free Quote
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
