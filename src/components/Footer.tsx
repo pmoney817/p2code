@@ -26,9 +26,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-flex items-center gap-0.5 text-xl font-bold">
-              <span className="text-white">P2</span>
-              <span className="gradient-text">Code</span>
+            <Link href="/" className="inline-flex items-baseline text-xl font-bold">
+              <span className="text-white">P</span><sup className="gradient-text text-sm -ml-0.5">2</sup><span className="text-text-muted font-semibold ml-0.5">Code</span>
             </Link>
             <p className="mt-3 text-sm text-text-muted leading-relaxed max-w-xs">
               Web development and AI learning for the modern era. Build smarter, ship faster.
