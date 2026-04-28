@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandName from "../components/BrandName";
 import {
   ArrowRight,
   MessageSquare,
@@ -230,7 +231,7 @@ export default function AILearning() {
         <div className="mx-auto max-w-3xl text-center">
           <Quote className="mx-auto h-10 w-10 text-primary/40" />
           <blockquote className="mt-6 text-2xl font-medium italic text-text">
-            &ldquo;We had no idea how much time we were wasting until P<sup>2</sup>Code
+            &ldquo;We had no idea how much time we were wasting until <BrandName variant="inline" />{" "}
             showed us. The AI tools they set up save us hours every week.&rdquo;
           </blockquote>
           <div className="mt-6 flex items-center justify-center gap-3">

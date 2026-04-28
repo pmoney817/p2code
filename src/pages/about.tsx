@@ -44,7 +44,7 @@ export default function About() {
       {/* Hero */}
       <section className="px-6 pt-32 pb-20 text-center">
         <h1 className="text-5xl font-bold tracking-tight sm:text-6xl text-white">
-          About <span className="gradient-text">P</span><sup className="gradient-text text-3xl sm:text-4xl">2</sup><span className="text-text-muted">Code</span>
+          About <BrandName className="text-5xl sm:text-6xl" />
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-text-muted">
           We help small businesses thrive in the digital age through custom web
@@ -80,7 +80,7 @@ export default function About() {
             Our Approach
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-text-muted">
-            <span className="font-semibold text-primary-light">P<sup className="text-accent">2</sup></span><span className="text-text font-semibold">Code</span> is a boutique digital agency focused exclusively on small
+            <BrandName variant="inline" /> is a boutique digital agency focused exclusively on small
             businesses. We believe every business deserves a great web presence
             and access to the latest AI tools — without enterprise-level pricing.
             We keep our client list intentionally small so we can give each
@@ -140,7 +140,7 @@ export default function About() {
                   technology work for people, not against them.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-text-muted">
-                  I started <span className="font-semibold text-primary-light">P<sup className="text-accent">2</sup></span><span className="text-text font-semibold">Code</span> because I saw small businesses struggling to get online
+                  I started <BrandName variant="inline" /> because I saw small businesses struggling to get online
                   while big agencies charged big-agency prices. I believe every business
                   deserves a professional web presence and access to AI tools — without
                   the complexity or the markup. I handle everything personally so you get

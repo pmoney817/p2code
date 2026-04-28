@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import BrandName from "./BrandName";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -32,7 +33,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-baseline text-xl font-bold">
-            <span className="gradient-text">P</span><sup className="gradient-text text-sm -ml-0.5">2</sup><span className="text-text-muted font-semibold ml-0.5">Code</span>
+            <BrandName />
           </Link>
 
           {/* Desktop links */}
