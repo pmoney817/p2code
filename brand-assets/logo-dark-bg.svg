@@ -5,10 +5,9 @@
       <stop offset="100%" stop-color="#06B6D4"/>
     </linearGradient>
   </defs>
-  <!-- P -->
-  <text x="0" y="36" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="36" fill="#F8FAFC">P</text>
-  <!-- ² (superscript, gradient) -->
+  <!-- P² unified gradient -->
+  <text x="0" y="36" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="36" fill="url(#accent-grad)">P</text>
   <text x="22" y="22" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" fill="url(#accent-grad)">2</text>
-  <!-- Code -->
+  <!-- Code (muted gray) -->
   <text x="38" y="36" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="36" fill="#94A3B8">Code</text>
 </svg>

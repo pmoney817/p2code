@@ -10,13 +10,14 @@
 
 ```
 P²Code
-│ │  │
-│ │  └── "Code" — text-muted (#94A3B8) — lighter weight
-│ └──── "²" — gradient accent (purple → cyan) — THE STAR
-└────── "P" — white (#F8FAFC) — bold
+││  │
+││  └── "Code" — text-muted (#94A3B8) — lighter weight, semibold
+│└──── "P²" — unified gradient accent (purple → cyan) — ONE UNIT
+└───── "P²" is the brand mark. Always gradient. Never split.
 ```
 
-The superscript ² is always the accent color. It IS the brand identity.
+"P²" is treated as a single gradient unit. The gradient IS the brand identity.
+On light backgrounds, use the darker gradient (#6C3AED → #0891B2).
 
 ## Colors
 

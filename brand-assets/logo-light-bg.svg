@@ -1,14 +1,13 @@
 <svg width="200" height="48" viewBox="0 0 200 48" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="accent-grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#06B6D4"/>
+      <stop offset="0%" stop-color="#6C3AED"/>
+      <stop offset="100%" stop-color="#0891B2"/>
     </linearGradient>
   </defs>
-  <!-- P -->
-  <text x="0" y="36" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="36" fill="#0F172A">P</text>
-  <!-- ² (superscript, gradient) -->
+  <!-- P² unified gradient (darker shades for light backgrounds) -->
+  <text x="0" y="36" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="36" fill="url(#accent-grad-light)">P</text>
   <text x="22" y="22" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="20" fill="url(#accent-grad-light)">2</text>
-  <!-- Code -->
+  <!-- Code (muted gray, darker for light bg) -->
   <text x="38" y="36" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="36" fill="#64748B">Code</text>
 </svg>

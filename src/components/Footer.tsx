@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="inline-flex items-baseline text-xl font-bold">
-              <span className="text-white">P</span><sup className="gradient-text text-sm -ml-0.5">2</sup><span className="text-text-muted font-semibold ml-0.5">Code</span>
+              <span className="gradient-text">P</span><sup className="gradient-text text-sm -ml-0.5">2</sup><span className="text-text-muted font-semibold ml-0.5">Code</span>
             </Link>
             <p className="mt-3 text-sm text-text-muted leading-relaxed max-w-xs">
               Web development and AI learning for the modern era. Build smarter, ship faster.
