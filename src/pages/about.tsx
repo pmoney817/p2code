@@ -80,7 +80,7 @@ export default function About() {
             Our Approach
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-text-muted">
-            <span className="gradient-text font-semibold">P<sup>2</sup></span><span className="text-text font-semibold">Code</span> is a boutique digital agency focused exclusively on small
+            <span className="font-semibold text-primary-light">P<sup className="text-accent">2</sup></span><span className="text-text font-semibold">Code</span> is a boutique digital agency focused exclusively on small
             businesses. We believe every business deserves a great web presence
             and access to the latest AI tools — without enterprise-level pricing.
             We keep our client list intentionally small so we can give each
@@ -140,7 +140,7 @@ export default function About() {
                   technology work for people, not against them.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-text-muted">
-                  I started <span className="gradient-text font-semibold">P<sup>2</sup></span><span className="text-text font-semibold">Code</span> because I saw small businesses struggling to get online
+                  I started <span className="font-semibold text-primary-light">P<sup className="text-accent">2</sup></span><span className="text-text font-semibold">Code</span> because I saw small businesses struggling to get online
                   while big agencies charged big-agency prices. I believe every business
                   deserves a professional web presence and access to AI tools — without
                   the complexity or the markup. I handle everything personally so you get
