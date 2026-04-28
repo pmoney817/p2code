@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import BrandName from "../components/BrandName";
 import {
@@ -40,8 +41,16 @@ const stats = [
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-surface">
-      {/* Hero */}
+    <>
+      <Head>
+        <title>About — P&#178;Code</title>
+        <meta
+          name="description"
+          content="Meet the team behind P²Code. 20+ years of IT experience dedicated to helping small businesses succeed online."
+        />
+      </Head>
+      <div className="min-h-screen bg-surface">
+        {/* Hero */}
       <section className="px-6 pt-32 pb-20 text-center">
         <h1 className="text-5xl font-bold tracking-tight sm:text-6xl text-white">
           About <BrandName className="text-5xl sm:text-6xl" />
@@ -170,6 +179,7 @@ export default function About() {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

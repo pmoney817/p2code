@@ -95,7 +95,7 @@ export default function Contact() {
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-text-muted">
-                      Name <span className="text-primary">*</span>
+                      Name <span className="text-accent">*</span>
                     </label>
                     <input
                       id="name"
@@ -110,7 +110,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-text-muted">
-                      Email <span className="text-primary">*</span>
+                      Email <span className="text-accent">*</span>
                     </label>
                     <input
                       id="email"
@@ -182,7 +182,7 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-text-muted">
-                    Message <span className="text-primary">*</span>
+                    Message <span className="text-accent">*</span>
                   </label>
                   <textarea
                     id="message"
@@ -217,9 +217,16 @@ export default function Contact() {
                   )}
                 </button>
 
+                {/* Consent */}
+                <p className="text-xs text-text-dim">
+                  By submitting this form, you agree to our{" "}
+                  <Link href="/privacy" className="text-accent hover:underline">Privacy Policy</Link>{" "}
+                  and consent to us contacting you regarding your inquiry.
+                </p>
+
                 {/* Success message */}
                 {success && (
-                  <div className="flex items-center gap-2 rounded-lg border border-success/30 bg-success/10 px-4 py-3 text-success">
+                  <div role="status" className="flex items-center gap-2 rounded-lg border border-success/30 bg-success/10 px-4 py-3 text-success">
                     <CheckCircle className="h-5 w-5 shrink-0" />
                     <span>Message sent successfully! We&apos;ll get back to you soon.</span>
                   </div>
@@ -227,7 +234,7 @@ export default function Contact() {
 
                 {/* Error message */}
                 {error && (
-                  <div className="flex items-center gap-2 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-red-400">
+                  <div role="alert" className="flex items-center gap-2 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-red-400">
                     <AlertCircle className="h-5 w-5 shrink-0" />
                     <span>{error}</span>
                   </div>

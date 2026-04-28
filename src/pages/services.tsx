@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import {
   Check,
@@ -107,9 +108,17 @@ const audiences = [
 
 export default function Services() {
   return (
-    <div className="min-h-screen bg-surface">
-      {/* Hero */}
-      <section className="px-6 pt-32 pb-20 text-center">
+    <>
+      <Head>
+        <title>Services — P&#178;Code</title>
+        <meta
+          name="description"
+          content="Web development, AI integration, and AI learning services for small businesses. Custom solutions starting at $1,500."
+        />
+      </Head>
+      <div className="min-h-screen bg-surface">
+        {/* Hero */}
+        <section className="px-6 pt-32 pb-20 text-center">
         <h1 className="gradient-text text-5xl font-bold tracking-tight sm:text-6xl">
           Get Your Business Online
         </h1>
@@ -351,6 +360,7 @@ export default function Services() {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

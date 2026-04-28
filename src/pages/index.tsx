@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { Code2, Bot, GraduationCap, Zap, Brain, Users, HeartHandshake, ArrowRight, ChevronRight } from "lucide-react";
 
 const services = [
@@ -47,6 +48,11 @@ const features = [
 
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>P²Code — Web Development &amp; AI Learning for Small Businesses</title>
+      <meta name="description" content="Custom websites and AI solutions for small businesses. Professional web development, AI integration, and AI learning — built to grow your business." />
+    </Head>
     <div className="min-h-screen bg-surface text-text">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
@@ -183,5 +189,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

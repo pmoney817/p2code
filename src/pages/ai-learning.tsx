@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import BrandName from "../components/BrandName";
 import {
@@ -55,8 +56,16 @@ const learningTopics = [
 
 export default function AILearning() {
   return (
-    <div className="min-h-screen bg-surface">
-      {/* Hero */}
+    <>
+      <Head>
+        <title>AI Learning — P&#178;Code</title>
+        <meta
+          name="description"
+          content="Learn how AI can transform your business. Hands-on workshops, tools, and consulting for small businesses."
+        />
+      </Head>
+      <div className="min-h-screen bg-surface">
+        {/* Hero */}
       <section className="px-6 pt-32 pb-20 text-center">
         <h1 className="gradient-text text-5xl font-bold tracking-tight sm:text-6xl">
           AI Learning &amp; Consulting
@@ -267,6 +276,7 @@ export default function AILearning() {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

@@ -23,6 +23,7 @@ export default function Navbar() {
 
   return (
     <nav
+      aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-surface/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20"
@@ -63,6 +64,8 @@ export default function Navbar() {
               className="md:hidden p-2 text-text-muted hover:text-white transition-colors"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-menu"
             >
               {mobileOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -72,7 +75,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-surface-light/95 backdrop-blur-xl border-t border-white/5">
+        <div id="mobile-menu" className="md:hidden bg-surface-light/95 backdrop-blur-xl border-t border-white/5">
           <div className="px-4 py-4 space-y-1">
             {navLinks.map((link) => (
               <Link
