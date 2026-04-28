@@ -119,9 +119,45 @@ export default function Terms() {
               </p>
             </section>
 
+            {/* Indemnification */}
+            <section>
+              <h2 className="mb-3 text-xl font-semibold text-text">8. Indemnification</h2>
+              <p>
+                You agree to indemnify, defend, and hold harmless <BrandName variant="plain" />, its
+                officers, directors, employees, and agents from and against any claims, liabilities,
+                damages, losses, or expenses arising from your use of our services, your violation
+                of these Terms, or your violation of any rights of a third party.
+              </p>
+            </section>
+
+            {/* Governing Law */}
+            <section>
+              <h2 className="mb-3 text-xl font-semibold text-text">9. Governing Law</h2>
+              <p>
+                These Terms shall be governed by and construed in accordance with the laws of the
+                State of Texas, United States, without regard to its conflict of law provisions.
+                Any legal action or proceeding arising under these Terms shall be brought exclusively
+                in the federal or state courts located in the State of Texas, and the parties hereby
+                consent to the personal jurisdiction of such courts.
+              </p>
+            </section>
+
+            {/* Dispute Resolution */}
+            <section>
+              <h2 className="mb-3 text-xl font-semibold text-text">10. Dispute Resolution</h2>
+              <p>
+                In the event of any dispute arising from these Terms or our services, both parties
+                agree to first attempt to resolve the matter informally by contacting us at{" "}
+                <a href="mailto:info@p2code.com" className="text-accent hover:underline">info@p2code.com</a>.
+                If the dispute cannot be resolved informally within 30 days, either party may pursue
+                mediation or binding arbitration in the State of Texas. This does not prevent either
+                party from seeking injunctive relief in court where necessary.
+              </p>
+            </section>
+
             {/* Changes */}
             <section>
-              <h2 className="mb-3 text-xl font-semibold text-text">8. Changes to Terms</h2>
+              <h2 className="mb-3 text-xl font-semibold text-text">11. Changes to Terms</h2>
               <p>
                 We may update these Terms from time to time. Changes will be posted on this page
                 with an updated revision date. Your continued use of our services after changes
@@ -131,7 +167,7 @@ export default function Terms() {
 
             {/* Contact */}
             <section>
-              <h2 className="mb-3 text-xl font-semibold text-text">9. Contact Us</h2>
+              <h2 className="mb-3 text-xl font-semibold text-text">12. Contact Us</h2>
               <p>
                 If you have any questions about these Terms, please contact us at{" "}
                 <a href="mailto:info@p2code.com" className="text-accent hover:underline">
