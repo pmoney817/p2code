@@ -1,15 +1,8 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="fav-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#06B6D4"/>
-    </linearGradient>
-  </defs>
-  <!-- Rounded square background -->
+  <!-- P²Code favicon — P² mark in rounded square -->
+  <!-- Solid primary-light on dark surface background -->
   <rect width="512" height="512" rx="108" ry="108" fill="#0F172A"/>
-  <!-- Subtle border -->
   <rect x="6" y="6" width="500" height="500" rx="102" ry="102" fill="none" stroke="#334155" stroke-width="2"/>
-  <!-- P² unified gradient -->
-  <text x="100" y="340" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="280" fill="url(#fav-grad)">P</text>
-  <text x="295" y="200" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="160" fill="url(#fav-grad)">2</text>
+  <text x="100" y="340" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="280" fill="#8B5CF6">P</text>
+  <text x="295" y="200" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="160" fill="#8B5CF6">2</text>
 </svg>

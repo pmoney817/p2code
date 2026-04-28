@@ -1,0 +1,65 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- P²Code Color Swatches Reference Sheet -->
+  <rect width="600" height="400" fill="#F8FAFC"/>
+
+  <text x="20" y="30" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="18" fill="#0F172A">P²Code Color Palette</text>
+
+  <!-- Primary colors -->
+  <text x="20" y="65" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748B">PRIMARY</text>
+  <rect x="20" y="75" width="80" height="60" rx="8" fill="#6C3AED"/>
+  <text x="25" y="150" font-family="Inter, monospace" font-size="10" fill="#64748B">Primary</text>
+  <text x="25" y="162" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#6C3AED</text>
+
+  <rect x="110" y="75" width="80" height="60" rx="8" fill="#5B21B6"/>
+  <text x="115" y="150" font-family="Inter, monospace" font-size="10" fill="#64748B">Primary Dark</text>
+  <text x="115" y="162" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#5B21B6</text>
+
+  <rect x="200" y="75" width="80" height="60" rx="8" fill="#8B5CF6"/>
+  <text x="205" y="150" font-family="Inter, monospace" font-size="10" fill="#64748B">Primary Light</text>
+  <text x="205" y="162" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#8B5CF6</text>
+  <text x="205" y="174" font-family="Inter, monospace" font-size="9" fill="#6C3AED">★ Brand mark</text>
+
+  <rect x="290" y="75" width="80" height="60" rx="8" fill="#06B6D4"/>
+  <text x="295" y="150" font-family="Inter, monospace" font-size="10" fill="#64748B">Accent</text>
+  <text x="295" y="162" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#06B6D4</text>
+
+  <rect x="380" y="75" width="80" height="60" rx="8" fill="#0891B2"/>
+  <text x="385" y="150" font-family="Inter, monospace" font-size="10" fill="#64748B">Accent Dark</text>
+  <text x="385" y="162" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#0891B2</text>
+
+  <!-- Surface colors -->
+  <text x="20" y="200" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748B">SURFACES</text>
+  <rect x="20" y="210" width="80" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <text x="25" y="285" font-family="Inter, monospace" font-size="10" fill="#64748B">Surface</text>
+  <text x="25" y="297" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#0F172A</text>
+
+  <rect x="110" y="210" width="80" height="60" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="115" y="285" font-family="Inter, monospace" font-size="10" fill="#64748B">Surface Light</text>
+  <text x="115" y="297" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#1E293B</text>
+
+  <rect x="200" y="210" width="80" height="60" rx="8" fill="#334155"/>
+  <text x="205" y="285" font-family="Inter, monospace" font-size="10" fill="#64748B">Surface Lighter</text>
+  <text x="205" y="297" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#334155</text>
+
+  <!-- Text colors -->
+  <text x="320" y="200" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748B">TEXT</text>
+  <rect x="320" y="210" width="80" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <text x="330" y="248" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="14" fill="#F8FAFC">Text</text>
+  <text x="325" y="285" font-family="Inter, monospace" font-size="10" fill="#64748B">Text</text>
+  <text x="325" y="297" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#F8FAFC</text>
+
+  <rect x="410" y="210" width="80" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <text x="420" y="248" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="14" fill="#94A3B8">Muted</text>
+  <text x="415" y="285" font-family="Inter, monospace" font-size="10" fill="#64748B">Text Muted</text>
+  <text x="415" y="297" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#94A3B8</text>
+
+  <rect x="500" y="210" width="80" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <text x="520" y="248" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="14" fill="#64748B">Dim</text>
+  <text x="505" y="285" font-family="Inter, monospace" font-size="10" fill="#64748B">Text Dim</text>
+  <text x="505" y="297" font-family="Inter, monospace" font-size="10" fill="#94A3B8">#64748B</text>
+
+  <!-- Utility -->
+  <text x="20" y="330" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748B">UTILITY</text>
+  <rect x="20" y="340" width="80" height="40" rx="8" fill="#10B981"/>
+  <text x="25" y="395" font-family="Inter, monospace" font-size="10" fill="#64748B">Success #10B981</text>
+</svg>
