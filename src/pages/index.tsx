@@ -134,7 +134,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why CodePulse */}
+      {/* Why P2Code */}
       <section className="border-y border-surface-lighter bg-surface-light/50 py-24 lg:py-32">
         <div className="mx-auto max-w-6xl px-6">
           <div className="animate-fade-in-up text-center">

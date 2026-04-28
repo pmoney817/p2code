@@ -5,8 +5,8 @@ export default function Privacy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy — CodePulse</title>
-        <meta name="description" content="CodePulse privacy policy — how we collect, use, and protect your data." />
+        <title>Privacy Policy — P2Code</title>
+        <meta name="description" content="P2Code privacy policy — how we collect, use, and protect your data." />
       </Head>
 
       <div className="min-h-screen bg-surface grid-bg">
@@ -20,7 +20,7 @@ export default function Privacy() {
             {/* Intro */}
             <section>
               <p>
-                CodePulse (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your privacy. This Privacy Policy
+                P2Code (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your privacy. This Privacy Policy
                 explains how we collect, use, disclose, and safeguard your information when you visit our
                 website or use our services.
               </p>
@@ -142,8 +142,8 @@ export default function Privacy() {
               <h2 className="mb-3 text-xl font-semibold text-text">Contact Us</h2>
               <p>
                 If you have questions about this Privacy Policy, please contact us at{" "}
-                <a href="mailto:hello@codepulse.dev" className="text-accent hover:underline">
-                  hello@codepulse.dev
+                <a href="mailto:info@p2code.com" className="text-accent hover:underline">
+                  info@p2code.com
                 </a>
                 .
               </p>

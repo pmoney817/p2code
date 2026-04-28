@@ -27,7 +27,7 @@ function isRateLimited(ip: string): boolean {
 function formatEmail(body: Record<string, string>): string {
   const { name, email, phone, service, budget, message } = body;
   return `
-New contact form submission from CodePulse
+New contact form submission from P2Code
 
 -------------------------------------------
 Name:     ${name}
@@ -91,7 +91,7 @@ export default async function handler(
     const contactEmail = process.env.CONTACT_EMAIL ?? email.trim();
 
     await resend.emails.send({
-      from: "CodePulse Contact <onboarding@resend.dev>",
+      from: "P2Code Contact <onboarding@resend.dev>",
       to: contactEmail,
       subject: `New Contact Form Submission from ${name.trim()}`,
       text: formatEmail({

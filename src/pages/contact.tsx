@@ -68,10 +68,10 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact — CodePulse</title>
+        <title>Contact — P2Code</title>
         <meta
           name="description"
-          content="Get in touch with CodePulse for web development, AI learning, and AI integration services."
+          content="Get in touch with P2Code for web development, AI learning, and AI integration services."
         />
       </Head>
 
@@ -246,8 +246,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-text-muted">Email</p>
-                    <a href="mailto:hello@codepulse.dev" className="text-text hover:text-accent transition-colors">
-                      hello@codepulse.dev
+                    <a href="mailto:info@p2code.com" className="text-text hover:text-accent transition-colors">
+                      info@p2code.com
                     </a>
                   </div>
                 </div>
@@ -290,8 +290,8 @@ export default function Contact() {
                 <h3 className="text-lg font-semibold text-text">Prefer email?</h3>
                 <p className="mt-2 text-sm text-text-muted">
                   Drop us a line anytime at{" "}
-                  <a href="mailto:hello@codepulse.dev" className="text-accent hover:underline">
-                    hello@codepulse.dev
+                  <a href="mailto:info@p2code.com" className="text-accent hover:underline">
+                    info@p2code.com
                   </a>
                 </p>
               </div>

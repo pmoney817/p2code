@@ -18,13 +18,13 @@ export default function Document() {
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="CodePulse - Web Development & AI Learning" />
+        <meta property="og:title" content="P2Code - Web Development & AI Learning" />
         <meta
           property="og:description"
-          content="Modern web development and AI learning. Build smarter, ship faster with CodePulse."
+          content="Modern web development and AI learning. Build smarter, ship faster with P2Code."
         />
-        <meta property="og:site_name" content="CodePulse" />
-        <meta property="og:url" content="https://codepulse.dev" />
+        <meta property="og:site_name" content="P2Code" />
+        <meta property="og:url" content="https://p2code.com" />
       </Head>
       <body className="antialiased">
         <Main />

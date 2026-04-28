@@ -11,9 +11,9 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { href: "https://github.com/codepulse", icon: Code, label: "GitHub" },
-  { href: "https://linkedin.com/company/codepulse", icon: Globe, label: "LinkedIn" },
-  { href: "https://twitter.com/codepulse", icon: MessageSquare, label: "Twitter" },
+  { href: "https://github.com/p2code", icon: Code, label: "GitHub" },
+  { href: "https://linkedin.com/company/p2code", icon: Globe, label: "LinkedIn" },
+  { href: "https://twitter.com/p2code", icon: MessageSquare, label: "Twitter" },
 ];
 
 export default function Footer() {
@@ -27,8 +27,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="inline-flex items-center gap-0.5 text-xl font-bold">
-              <span className="text-white">Code</span>
-              <span className="gradient-text">Pulse</span>
+              <span className="text-white">P2</span>
+              <span className="gradient-text">Code</span>
             </Link>
             <p className="mt-3 text-sm text-text-muted leading-relaxed max-w-xs">
               Web development and AI learning for the modern era. Build smarter, ship faster.
@@ -62,18 +62,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-text-muted">
               <li>
                 <a
-                  href="mailto:hello@codepulse.dev"
+                  href="mailto:info@p2code.com"
                   className="hover:text-white transition-colors duration-200"
                 >
-                  hello@codepulse.dev
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+15551234567"
-                  className="hover:text-white transition-colors duration-200"
-                >
-                  (555) 123-4567
+                  info@p2code.com
                 </a>
               </li>
             </ul>
@@ -99,7 +91,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-surface-lighter text-center">
           <p className="text-xs text-text-dim">
-            &copy; 2026 CodePulse. All rights reserved.
+            &copy; 2026 P2Code. All rights reserved.
           </p>
         </div>
       </div>

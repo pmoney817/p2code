@@ -32,8 +32,8 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-0.5 text-xl font-bold">
-            <span className="text-white">Code</span>
-            <span className="gradient-text">Pulse</span>
+            <span className="text-white">P2</span>
+            <span className="gradient-text">Code</span>
           </Link>
 
           {/* Desktop links */}
