@@ -5,8 +5,8 @@ export default function Privacy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy — P²Code</title>
-        <meta name="description" content="P²Code privacy policy — how we collect, use, and protect your data." />
+        <title>Privacy Policy — P&sup2;Code</title>
+        <meta name="description" content="P&sup2;Code privacy policy — how we collect, use, and protect your data." />
       </Head>
 
       <div className="min-h-screen bg-surface grid-bg">
@@ -20,7 +20,7 @@ export default function Privacy() {
             {/* Intro */}
             <section>
               <p>
-                P²Code (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your privacy. This Privacy Policy
+                P&sup2;Code (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your privacy. This Privacy Policy
                 explains how we collect, use, disclose, and safeguard your information when you visit our
                 website or use our services.
               </p>

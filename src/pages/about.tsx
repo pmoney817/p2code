@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandName from "../components/BrandName";
 import {
   ArrowRight,
   Lightbulb,
@@ -43,7 +44,7 @@ export default function About() {
       {/* Hero */}
       <section className="px-6 pt-32 pb-20 text-center">
         <h1 className="gradient-text text-5xl font-bold tracking-tight sm:text-6xl">
-          About P²Code
+          About <BrandName variant="inline" />
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-text-muted">
           We help small businesses thrive in the digital age through custom web
@@ -79,7 +80,7 @@ export default function About() {
             Our Approach
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-text-muted">
-            P²Code is a boutique digital agency focused exclusively on small
+            P<sup>2</sup>Code is a boutique digital agency focused exclusively on small
             businesses. We believe every business deserves a great web presence
             and access to the latest AI tools — without enterprise-level pricing.
             We keep our client list intentionally small so we can give each
@@ -139,7 +140,7 @@ export default function About() {
                   technology work for people, not against them.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-text-muted">
-                  I started P²Code because I saw small businesses struggling to get online
+                  I started P<sup>2</sup>Code because I saw small businesses struggling to get online
                   while big agencies charged big-agency prices. I believe every business
                   deserves a professional web presence and access to AI tools — without
                   the complexity or the markup. I handle everything personally so you get
