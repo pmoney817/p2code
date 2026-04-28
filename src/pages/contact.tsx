@@ -68,10 +68,10 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact — P2Code</title>
+        <title>Contact — P²Code</title>
         <meta
           name="description"
-          content="Get in touch with P2Code for web development, AI learning, and AI integration services."
+          content="Get in touch with P²Code for web development, AI learning, and AI integration services."
         />
       </Head>
 

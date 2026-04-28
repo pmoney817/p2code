@@ -18,12 +18,12 @@ export default function Document() {
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="P2Code - Web Development & AI Learning" />
+        <meta property="og:title" content="P²Code - Web Development & AI Learning" />
         <meta
           property="og:description"
-          content="Modern web development and AI learning. Build smarter, ship faster with P2Code."
+          content="Modern web development and AI learning. Build smarter, ship faster with P²Code."
         />
-        <meta property="og:site_name" content="P2Code" />
+        <meta property="og:site_name" content="P²Code" />
         <meta property="og:url" content="https://p2code.com" />
       </Head>
       <body className="antialiased">

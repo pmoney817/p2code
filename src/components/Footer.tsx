@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Code, Globe, MessageSquare } from "lucide-react";
+import BrandName from "./BrandName";
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -90,7 +91,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-surface-lighter text-center">
           <p className="text-xs text-text-dim">
-            &copy; 2026 P2Code. All rights reserved.
+            &copy; 2026 <BrandName variant="inline" className="text-xs" />. All rights reserved.
           </p>
         </div>
       </div>
