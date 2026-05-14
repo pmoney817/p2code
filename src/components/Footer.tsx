@@ -63,10 +63,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-text-muted">
               <li>
                 <a
-                  href="mailto:info@p2code.com"
+                  href="mailto:hello@p2code.com"
                   className="hover:text-white transition-colors duration-200"
                 >
-                  info@p2code.com
+                  hello@p2code.com
                 </a>
               </li>
             </ul>

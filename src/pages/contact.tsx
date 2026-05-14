@@ -253,8 +253,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-text-muted">Email</p>
-                    <a href="mailto:info@p2code.com" className="text-text hover:text-accent transition-colors">
-                      info@p2code.com
+                    <a href="mailto:hello@p2code.com" className="text-text hover:text-accent transition-colors">
+                      hello@p2code.com
                     </a>
                   </div>
                 </div>
@@ -297,8 +297,8 @@ export default function Contact() {
                 <h3 className="text-lg font-semibold text-text">Prefer email?</h3>
                 <p className="mt-2 text-sm text-text-muted">
                   Drop us a line anytime at{" "}
-                  <a href="mailto:info@p2code.com" className="text-accent hover:underline">
-                    info@p2code.com
+                  <a href="mailto:hello@p2code.com" className="text-accent hover:underline">
+                    hello@p2code.com
                   </a>
                 </p>
               </div>

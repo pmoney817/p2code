@@ -133,7 +133,7 @@ export default function Privacy() {
               </ul>
               <p className="mt-3">
                 To exercise any of these rights, contact us at{" "}
-                <a href="mailto:info@p2code.com" className="text-accent hover:underline">info@p2code.com</a>.
+                <a href="mailto:hello@p2code.com" className="text-accent hover:underline">hello@p2code.com</a>.
                 We will respond within 30 days.
               </p>
             </section>
@@ -150,7 +150,7 @@ export default function Privacy() {
               </ul>
               <p className="mt-3">
                 <strong className="text-text">We do not sell your personal information.</strong> To make a request,
-                contact us at <a href="mailto:info@p2code.com" className="text-accent hover:underline">info@p2code.com</a>.
+                contact us at <a href="mailto:hello@p2code.com" className="text-accent hover:underline">hello@p2code.com</a>.
               </p>
             </section>
 
@@ -204,7 +204,7 @@ export default function Privacy() {
                 If you have questions about this Privacy Policy or wish to exercise your data rights, contact us at:
               </p>
               <ul className="mt-2 list-disc space-y-1 pl-6">
-                <li>Email: <a href="mailto:info@p2code.com" className="text-accent hover:underline">info@p2code.com</a></li>
+                <li>Email: <a href="mailto:hello@p2code.com" className="text-accent hover:underline">hello@p2code.com</a></li>
                 <li>Website: <a href="https://p2code.com" className="text-accent hover:underline">p2code.com</a></li>
               </ul>
             </section>

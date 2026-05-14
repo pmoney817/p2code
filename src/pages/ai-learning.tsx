@@ -74,6 +74,10 @@ export default function AILearning() {
           Practical AI training and hands-on consulting for small businesses.
           No jargon, no fluff — just real tools you can use tomorrow.
         </p>
+        <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary/10 border border-primary/30 px-5 py-2.5 text-sm font-semibold text-primary-light">
+          <Clock className="h-4 w-4" />
+          Coming Soon — Pricing &amp; packages launching shortly
+        </div>
       </section>
 
       {/* Two Offerings — Side by Side */}
@@ -86,8 +90,13 @@ export default function AILearning() {
         </p>
 
         <div className="grid gap-8 lg:grid-cols-2">
-          {/* AI Fundamentals */}
-          <div className="flex flex-col rounded-2xl border border-surface-lighter bg-surface-light p-8">
+          {/* AI Fundamentals — Coming Soon */}
+          <div className="relative flex flex-col rounded-2xl border border-surface-lighter bg-surface-light p-8 opacity-60 pointer-events-none">
+            <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+              <span className="rounded-full bg-surface border border-surface-lighter px-6 py-3 text-lg font-bold text-text-muted shadow-lg">
+                Coming Soon
+              </span>
+            </div>
             <div className="flex items-center gap-3 mb-1">
               <GraduationCap className="h-7 w-7 text-primary-light" />
               <h3 className="text-2xl font-bold text-text">AI Fundamentals</h3>
@@ -105,7 +114,7 @@ export default function AILearning() {
               use AI tools effectively in your day-to-day business. You&apos;ll leave
               with practical skills you can apply immediately.
             </p>
-            <p className="text-4xl font-bold text-text mb-1">$500</p>
+            <p className="text-2xl font-bold text-text-muted mb-1">Pricing TBD</p>
             <p className="text-sm text-text-dim mb-6">Flat rate — includes training plan &amp; documentation</p>
 
             <ul className="flex-1 space-y-3">
@@ -124,17 +133,19 @@ export default function AILearning() {
               ))}
             </ul>
 
-            <Link
-              href="/contact"
-              className="mt-8 block rounded-xl border border-surface-lighter bg-surface px-6 py-3.5 text-center font-semibold text-text transition-all hover:border-primary hover:text-primary-light"
-            >
-              Book a Training Session
-            </Link>
+            <span className="mt-8 block rounded-xl border border-surface-lighter bg-surface px-6 py-3.5 text-center font-semibold text-text-dim cursor-not-allowed">
+              Coming Soon
+            </span>
           </div>
 
-          {/* AI Business Audit */}
-          <div className="relative flex flex-col rounded-2xl border border-accent bg-surface-light p-8 glow-accent">
-            <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-primary to-accent px-4 py-1 text-xs font-bold uppercase tracking-widest text-white">
+          {/* AI Business Audit — Coming Soon */}
+          <div className="relative flex flex-col rounded-2xl border border-surface-lighter bg-surface-light p-8 opacity-60 pointer-events-none">
+            <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+              <span className="rounded-full bg-surface border border-surface-lighter px-6 py-3 text-lg font-bold text-text-muted shadow-lg">
+                Coming Soon
+              </span>
+            </div>
+            <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-surface-lighter px-4 py-1 text-xs font-bold uppercase tracking-widest text-text-muted">
               Most Popular
             </span>
             <div className="flex items-center gap-3 mb-1">
@@ -151,7 +162,7 @@ export default function AILearning() {
               and map your end-to-end workflow. Then we show you exactly where AI
               can save you time and money — and help you set it up.
             </p>
-            <p className="text-4xl font-bold text-text mb-1">$1,200</p>
+            <p className="text-2xl font-bold text-text-muted mb-1">Pricing TBD</p>
             <p className="text-sm text-text-dim mb-6">Flat rate — includes report, setup &amp; documentation</p>
 
             <ul className="flex-1 space-y-3">
@@ -172,12 +183,9 @@ export default function AILearning() {
               ))}
             </ul>
 
-            <Link
-              href="/contact"
-              className="mt-8 block rounded-xl bg-gradient-to-r from-primary to-accent px-6 py-3.5 text-center font-semibold text-white transition-all hover:shadow-lg hover:shadow-accent/25 hover:brightness-110"
-            >
-              Schedule an Audit
-            </Link>
+            <span className="mt-8 block rounded-xl border border-surface-lighter bg-surface px-6 py-3.5 text-center font-semibold text-text-dim cursor-not-allowed">
+              Coming Soon
+            </span>
           </div>
         </div>
       </section>
@@ -261,17 +269,17 @@ export default function AILearning() {
       <section className="px-6 pb-32 pt-16 text-center">
         <div className="mx-auto max-w-2xl rounded-2xl border border-surface-lighter bg-surface-light p-12">
           <h2 className="text-3xl font-bold text-text">
-            Ready to bring AI into your business?
+            Interested in AI for your business?
           </h2>
           <p className="mt-4 text-text-muted">
-            Whether you want to learn the basics or find where AI fits in your
-            workflow, we&apos;re here to help.
+            We&apos;re finalizing our AI training packages. Drop us a line and
+            we&apos;ll let you know when they&apos;re ready.
           </p>
           <Link
             href="/contact"
             className="mt-8 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-accent px-8 py-4 font-semibold text-white transition-all hover:shadow-lg hover:shadow-primary/25 hover:brightness-110"
           >
-            Get Started
+            Get in Touch
             <ArrowRight className="h-5 w-5" />
           </Link>
         </div>

@@ -148,7 +148,7 @@ export default function Terms() {
               <p>
                 In the event of any dispute arising from these Terms or our services, both parties
                 agree to first attempt to resolve the matter informally by contacting us at{" "}
-                <a href="mailto:info@p2code.com" className="text-accent hover:underline">info@p2code.com</a>.
+                <a href="mailto:hello@p2code.com" className="text-accent hover:underline">hello@p2code.com</a>.
                 If the dispute cannot be resolved informally within 30 days, either party may pursue
                 mediation or binding arbitration in the State of Texas. This does not prevent either
                 party from seeking injunctive relief in court where necessary.
@@ -170,8 +170,8 @@ export default function Terms() {
               <h2 className="mb-3 text-xl font-semibold text-text">12. Contact Us</h2>
               <p>
                 If you have any questions about these Terms, please contact us at{" "}
-                <a href="mailto:info@p2code.com" className="text-accent hover:underline">
-                  info@p2code.com
+                <a href="mailto:hello@p2code.com" className="text-accent hover:underline">
+                  hello@p2code.com
                 </a>.
               </p>
             </section>
