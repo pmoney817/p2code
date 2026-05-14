@@ -92,7 +92,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-surface-lighter text-center">
           <p className="text-xs text-text-dim">
-            &copy; 2026 <BrandName variant="plain" />. All rights reserved.
+            &copy; 2026 PhatCode LLC, d/b/a <BrandName variant="plain" />. All rights reserved.
           </p>
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function Privacy() {
             {/* Intro */}
             <section>
               <p>
-                <BrandName variant="plain" /> (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), operated out of the State of Texas, United States,
+                PhatCode LLC, doing business as <BrandName variant="plain" /> (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), operated out of the State of Texas, United States,
                 respects your privacy. This Privacy Policy explains how we collect, use, disclose, and
                 safeguard your information when you visit our website (p2code.com) or use our services.
               </p>
@@ -204,6 +204,7 @@ export default function Privacy() {
                 If you have questions about this Privacy Policy or wish to exercise your data rights, contact us at:
               </p>
               <ul className="mt-2 list-disc space-y-1 pl-6">
+                <li>PhatCode LLC, d/b/a P&#178;Code</li>
                 <li>Email: <a href="mailto:hello@p2code.com" className="text-accent hover:underline">hello@p2code.com</a></li>
                 <li>Website: <a href="https://p2code.com" className="text-accent hover:underline">p2code.com</a></li>
               </ul>

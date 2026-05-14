@@ -21,7 +21,8 @@ export default function Terms() {
             {/* Intro */}
             <section>
               <p>
-                Welcome to <BrandName variant="plain" />. By accessing or using our website and services,
+                Welcome to PhatCode LLC, doing business as <BrandName variant="plain" /> (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
+                By accessing or using our website and services,
                 you agree to be bound by these Terms of Service. If you do not agree to these terms,
                 please do not use our services.
               </p>
@@ -169,11 +170,12 @@ export default function Terms() {
             <section>
               <h2 className="mb-3 text-xl font-semibold text-text">12. Contact Us</h2>
               <p>
-                If you have any questions about these Terms, please contact us at{" "}
-                <a href="mailto:hello@p2code.com" className="text-accent hover:underline">
-                  hello@p2code.com
-                </a>.
+                If you have any questions about these Terms, please contact us at:
               </p>
+              <ul className="mt-2 list-disc space-y-1 pl-6">
+                <li>PhatCode LLC, d/b/a P&#178;Code</li>
+                <li>Email: <a href="mailto:hello@p2code.com" className="text-accent hover:underline">hello@p2code.com</a></li>
+              </ul>
             </section>
           </div>
 
