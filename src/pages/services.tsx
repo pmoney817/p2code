@@ -187,9 +187,14 @@ export default function Services() {
             </Link>
           </div>
 
-          {/* AI-Ready Package */}
-          <div className="relative flex flex-col rounded-2xl border border-accent bg-surface-light p-8 glow-accent">
-            <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-primary to-accent px-4 py-1 text-xs font-bold uppercase tracking-widest text-white">
+          {/* AI-Ready Package — Coming Soon */}
+          <div className="relative flex flex-col rounded-2xl border border-surface-lighter bg-surface-light p-8 opacity-60 pointer-events-none">
+            <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+              <span className="rounded-full bg-surface border border-surface-lighter px-6 py-3 text-lg font-bold text-text-muted shadow-lg">
+                Coming Soon
+              </span>
+            </div>
+            <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-surface-lighter px-4 py-1 text-xs font-bold uppercase tracking-widest text-text-muted">
               Recommended
             </span>
             <div className="flex items-center gap-3 mb-1">
@@ -199,7 +204,7 @@ export default function Services() {
             <p className="text-sm text-text-muted mb-6">
               A future-proof website with AI built in — chatbot, smart features, and room to grow.
             </p>
-            <p className="text-4xl font-bold text-text mb-1">$2,500</p>
+            <p className="text-2xl font-bold text-text-muted mb-1">Pricing TBD</p>
             <p className="text-sm text-text-dim mb-6">One-time flat rate</p>
             <ul className="flex-1 space-y-3">
               {aiReadyFeatures.map((feature) => (
@@ -212,12 +217,9 @@ export default function Services() {
                 </li>
               ))}
             </ul>
-            <Link
-              href="/contact"
-              className="mt-8 block rounded-xl bg-gradient-to-r from-primary to-accent px-6 py-3.5 text-center font-semibold text-white transition-all hover:shadow-lg hover:shadow-accent/25 hover:brightness-110"
-            >
-              Get Started with AI
-            </Link>
+            <span className="mt-8 block rounded-xl border border-surface-lighter bg-surface px-6 py-3.5 text-center font-semibold text-text-dim cursor-not-allowed">
+              Coming Soon
+            </span>
           </div>
         </div>
       </section>
