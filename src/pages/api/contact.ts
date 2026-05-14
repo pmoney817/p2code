@@ -88,11 +88,17 @@ export default async function handler(
   // Send via Resend
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const contactEmail = process.env.CONTACT_EMAIL ?? email.trim();
+    const contactEmail = process.env.CONTACT_EMAIL;
+
+    if (!contactEmail) {
+      console.error("CONTACT_EMAIL env var is not set");
+      return res.status(500).json({ error: "Contact form is not configured. Please email us directly at hello@p2code.com." });
+    }
 
     await resend.emails.send({
-      from: "P²Code Contact <onboarding@resend.dev>",
+      from: process.env.RESEND_FROM_EMAIL ?? "P²Code <onboarding@resend.dev>",
       to: contactEmail,
+      replyTo: email.trim(),
       subject: `New Contact Form Submission from ${name.trim()}`,
       text: formatEmail({
         name: name.trim(),
