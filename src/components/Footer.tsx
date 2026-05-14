@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Code, Globe, MessageSquare } from "lucide-react";
 import BrandName from "./BrandName";
 
 const quickLinks = [
@@ -10,12 +9,6 @@ const quickLinks = [
   { href: "/contact", label: "Contact" },
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms" },
-];
-
-const socialLinks = [
-  { href: "https://github.com/p2code", icon: Code, label: "GitHub" },
-  { href: "https://linkedin.com/company/p2code", icon: Globe, label: "LinkedIn" },
-  { href: "https://twitter.com/p2code", icon: MessageSquare, label: "Twitter" },
 ];
 
 export default function Footer() {
@@ -70,22 +63,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-
-            {/* Social */}
-            <div className="mt-5 flex items-center gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="p-2 text-text-muted hover:text-white hover:bg-surface-lighter rounded-lg transition-all duration-200"
-                >
-                  <social.icon size={18} />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
 

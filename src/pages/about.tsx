@@ -6,10 +6,6 @@ import {
   Lightbulb,
   Award,
   Handshake,
-  FolderKanban,
-  GraduationCap,
-  ThumbsUp,
-  User,
 } from "lucide-react";
 
 const values = [
@@ -31,12 +27,6 @@ const values = [
     description:
       "We treat every client relationship as a partnership. Your success is our success, and we are in it for the long run.",
   },
-];
-
-const stats = [
-  { icon: FolderKanban, value: "50+", label: "Projects" },
-  { icon: GraduationCap, value: "100+", label: "Students Trained" },
-  { icon: ThumbsUp, value: "98%", label: "Client Satisfaction" },
 ];
 
 export default function About() {
@@ -97,30 +87,6 @@ export default function About() {
             full-stack application, we bring the same level of craftsmanship and
             communication to every engagement.
           </p>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="px-6 py-24">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="gradient-text text-center text-3xl font-bold sm:text-4xl">
-            By the Numbers
-          </h2>
-          <p className="mx-auto mt-3 max-w-md text-center text-sm text-text-dim">
-            These are aspirational targets that reflect our growth goals.
-          </p>
-          <div className="mt-12 grid gap-8 sm:grid-cols-3">
-            {stats.map(({ icon: Icon, value, label }) => (
-              <div
-                key={label}
-                className="rounded-2xl border border-surface-lighter bg-surface-light p-8 text-center"
-              >
-                <Icon className="mx-auto h-8 w-8 text-accent" />
-                <p className="mt-4 text-4xl font-bold text-text">{value}</p>
-                <p className="mt-1 text-sm text-text-muted">{label}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

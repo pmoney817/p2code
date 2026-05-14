@@ -136,7 +136,7 @@ export default function Contact() {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(555) 123-4567"
+                      placeholder="(xxx) xxx-xxxx"
                       className={inputClasses}
                     />
                   </div>
@@ -255,18 +255,6 @@ export default function Contact() {
                     <p className="text-sm font-medium text-text-muted">Email</p>
                     <a href="mailto:hello@p2code.com" className="text-text hover:text-accent transition-colors">
                       hello@p2code.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <Phone className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-text-muted">Phone</p>
-                    <a href="tel:+15551234567" className="text-text hover:text-accent transition-colors">
-                      (555) 123-4567
                     </a>
                   </div>
                 </div>
