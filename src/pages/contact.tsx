@@ -10,6 +10,7 @@ interface FormData {
   service: string;
   budget: string;
   message: string;
+  website: string; // honeypot — bots fill this, humans don't see it
 }
 
 const initialFormData: FormData = {
@@ -19,7 +20,11 @@ const initialFormData: FormData = {
   service: "",
   budget: "",
   message: "",
+  website: "",
 };
+
+const PHONE_REGEX = /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function Contact() {
   const [formData, setFormData] = useState<FormData>(initialFormData);
@@ -38,6 +43,24 @@ export default function Contact() {
     setLoading(true);
     setError("");
     setSuccess(false);
+
+    // Honeypot — if filled, silently "succeed" (it's a bot)
+    if (formData.website) {
+      setTimeout(() => { setSuccess(true); setLoading(false); }, 1000);
+      return;
+    }
+
+    // Client-side validation
+    if (!EMAIL_REGEX.test(formData.email.trim())) {
+      setError("Please enter a valid email address.");
+      setLoading(false);
+      return;
+    }
+    if (!PHONE_REGEX.test(formData.phone.trim())) {
+      setError("Please enter a valid phone number (e.g. 512-555-1234).");
+      setLoading(false);
+      return;
+    }
 
     try {
       const res = await fetch("/api/contact", {
@@ -128,15 +151,16 @@ export default function Contact() {
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-text-muted">
-                      Phone
+                      Phone <span className="text-accent">*</span>
                     </label>
                     <input
                       id="phone"
                       name="phone"
                       type="tel"
+                      required
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(xxx) xxx-xxxx"
+                      placeholder="512-555-1234"
                       className={inputClasses}
                     />
                   </div>
@@ -193,6 +217,20 @@ export default function Contact() {
                     onChange={handleChange}
                     placeholder="Tell us about your project or what you'd like to learn..."
                     className={inputClasses + " resize-y"}
+                  />
+                </div>
+
+                {/* Honeypot — invisible to humans, bots fill it out */}
+                <div className="absolute opacity-0 -z-10 h-0 overflow-hidden" aria-hidden="true">
+                  <label htmlFor="website">Website</label>
+                  <input
+                    id="website"
+                    name="website"
+                    type="text"
+                    value={formData.website}
+                    onChange={handleChange}
+                    tabIndex={-1}
+                    autoComplete="off"
                   />
                 </div>
 
