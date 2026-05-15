@@ -80,7 +80,7 @@ export default async function handler(
   }
 
   // Validate email format
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   if (!emailRegex.test(email.trim())) {
     return res.status(400).json({ error: "Please provide a valid email address." });
   }
