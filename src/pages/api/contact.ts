@@ -95,8 +95,11 @@ export default async function handler(
       return res.status(500).json({ error: "Contact form is not configured. Please email us directly at hello@p2code.com." });
     }
 
-    await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL ?? "P²Code <onboarding@resend.dev>",
+    const fromEmail = process.env.RESEND_FROM_EMAIL ?? "P²Code <onboarding@resend.dev>";
+    console.log("[Contact] Sending email", JSON.stringify({ from: fromEmail, to: contactEmail, replyTo: email.trim(), hasApiKey: !!process.env.RESEND_API_KEY }));
+
+    const result = await resend.emails.send({
+      from: fromEmail,
       to: contactEmail,
       replyTo: email.trim(),
       subject: `New Contact Form Submission from ${name.trim()}`,
@@ -110,9 +113,10 @@ export default async function handler(
       }),
     });
 
+    console.log("[Contact] Resend response", JSON.stringify(result));
     return res.status(200).json({ success: true });
   } catch (err) {
-    console.error("Failed to send contact email:", err);
+    console.error("[Contact] Failed to send:", err);
     return res.status(500).json({ error: "Failed to send message. Please try again later." });
   }
 }
