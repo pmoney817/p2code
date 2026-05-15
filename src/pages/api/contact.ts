@@ -98,7 +98,7 @@ export default async function handler(
     const fromEmail = process.env.RESEND_FROM_EMAIL ?? "P²Code <onboarding@resend.dev>";
     console.log("[Contact] Sending email", JSON.stringify({ from: fromEmail, to: contactEmail, replyTo: email.trim(), hasApiKey: !!process.env.RESEND_API_KEY }));
 
-    const result = await resend.emails.send({
+    const { data, error: sendError } = await resend.emails.send({
       from: fromEmail,
       to: contactEmail,
       replyTo: email.trim(),
@@ -113,7 +113,12 @@ export default async function handler(
       }),
     });
 
-    console.log("[Contact] Resend response", JSON.stringify(result));
+    if (sendError) {
+      console.error("[Contact] Resend error:", JSON.stringify(sendError));
+      return res.status(500).json({ error: `Failed to send: ${sendError.message}` });
+    }
+
+    console.log("[Contact] Sent successfully, id:", data?.id);
     return res.status(200).json({ success: true });
   } catch (err) {
     console.error("[Contact] Failed to send:", err);
